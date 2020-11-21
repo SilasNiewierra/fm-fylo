@@ -17,6 +17,9 @@ class Overview extends Component {
         return (
 
             <div>
+                <div className="overview-locations">
+                    <img src="../../assets/images/logo.svg" alt="logo"/>
+                </div>
                 <h2>Welcome to your overview</h2>
                 <button onClick={this.handleLogout}>Logout</button>
             </div>
