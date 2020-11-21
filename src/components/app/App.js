@@ -8,11 +8,13 @@ class App extends Component {
     super(props);
     this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
-    this.state = ({ user: null });
+    this.state = { user: null, space: null };
   }
 
   handleLogin(user) {
     this.setState({ user: user });
+    var spaceDummy = {total: 1000, used: 125};
+    this.setState({space: spaceDummy});
   }
 
   handleLogout() {
@@ -23,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="content-container">
-          {this.state.user ? <Overview onLogout={this.handleLogout} /> : <Login onLogin={this.handleLogin} />}
+          {this.state.user ? <Overview onLogout={this.handleLogout} space={this.state.space}/> : <Login onLogin={this.handleLogin} />}
         </div>
       </div>
     );

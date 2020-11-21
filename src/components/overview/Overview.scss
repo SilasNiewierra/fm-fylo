@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.overview-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.overview-locations {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: $color-box;
+    border-radius: 10px 80px 10px 10px;
+    padding: $dim-padding;
+    min-width: $dim-box-min-width;
+    min-height: 150px;
+}
+
+.overview-locations-header {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.locations-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.location-item {
+    background-color: $color-bg;
+    border-radius: 5px;
+    width: 40px;
+    height: 40px;
+    content: "";
+}
+
+.overview-space {
+    background-color: $color-box;
+    border-radius: 10px;
+    min-width: $dim-box-min-width;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: $dim-padding;
+}
