@@ -75,6 +75,7 @@
     border-radius: $dim-border-radius;
     margin-right: $dim-padding;
     z-index: 1;
+    min-height: 50px;
 }
 
 .desktop {
@@ -139,6 +140,14 @@
 
     .mobile {
         display: block;
-        margin-top: -20px;
+        margin-top: calc(-1*((#{$dim-padding}/2) + 25px));
+    }
+
+    .overview-space-text {
+        letter-spacing: 0em;
+    }
+
+    .overview-main-box {
+        align-items: center;
     }
 }
