@@ -20,11 +20,11 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding: $dim-padding;
-    background-color: $color-box;
-    border-radius: $dim-border-radius 80px $dim-border-radius $dim-border-radius;
     min-width: $dim-box-min-width;
     min-height: 150px;
+    padding: $dim-padding;
+    border-radius: $dim-border-radius 80px $dim-border-radius $dim-border-radius;
+    background-color: $color-box;
 }
 
 .overview-locations-header {
@@ -40,9 +40,9 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
+    gap: 10px;
 }
 
 .location-item {
@@ -50,18 +50,18 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background-color: $color-bg;
-    border-radius: $dim-border-radius-small;
     width: 40px;
     height: 40px;
+    border-radius: $dim-border-radius-small;
+    background-color: $color-bg;
     content: "";
 
     .icon {
-        color: $color-icon;
-        padding: 0;
-        margin: 0;
         width: 30px;
         height: 30px;
+        padding: 0;
+        margin: 0;
+        color: $color-icon;
     }
 }
 
@@ -70,8 +70,8 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
-    min-width: $dim-box-min-width;
     width: 500px;
+    min-width: $dim-box-min-width;
     height: 100%;
     margin-left: 50px;
     margin-right: 50px;
@@ -82,12 +82,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: $dim-padding-small;
-    background-color: white;
-    border-radius: $dim-border-radius;
-    margin-right: $dim-padding;
-    z-index: 1;
     min-height: 50px;
+    padding: $dim-padding-small;
+    margin-right: $dim-padding;
+    border-radius: $dim-border-radius;
+    background-color: white;
+    z-index: 1;
 }
 
 .desktop {
@@ -100,17 +100,17 @@
 }
 
 .overview-space-box-big-text {
-    color: $color-bg;
+    margin-right: 10px;
     font-weight: $font-weight-bold;
     font-size: 30px;
-    margin-right: 10px;
+    color: $color-bg;
 }
 
 .overview-space-box-text {
-    color: $color-text-smooth;
     font-weight: $font-weight-bold;
-    text-transform: uppercase;
     font-size: 12px;
+    text-transform: uppercase;
+    color: $color-text-smooth;
 }
 
 .overview-main-box {
@@ -118,12 +118,12 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: $dim-padding;
-    background-color: $color-box;
-    border-radius: $dim-border-radius;
-    min-width: $dim-box-min-width;
     width: inherit;
+    min-width: $dim-box-min-width;
     height: 120px;
+    padding: $dim-padding;
+    border-radius: $dim-border-radius;
+    background-color: $color-box;
 }
 
 .overview-space-text {
@@ -138,8 +138,8 @@
     .overview-space {
         align-items: center;
         width: $dim-box-min-width !important;
-        margin-right: 0px;
         margin-left: 0px;
+        margin-right: 0px;
     }
 
     .overview-space-box {

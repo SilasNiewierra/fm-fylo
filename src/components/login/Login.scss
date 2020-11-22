@@ -7,8 +7,8 @@
     align-items: center;
     justify-content: center;
     padding: $dim-padding;
-    background-color: $color-box;
     border-radius: $dim-border-radius;
+    background-color: $color-box;
 }
 
 .logo {
@@ -16,17 +16,17 @@
 }
 
 .button {
-    cursor: pointer;
-    background-color: $color-contrast;
-    border-radius: $dim-border-radius;
-    width: 200px;
-    height: 50px;
     display:flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    color: $color-bg;
+    width: 200px;
+    height: 50px;
+    border-radius: $dim-border-radius;
     font-weight: $font-weight-bold;
+    color: $color-bg;
+    background-color: $color-contrast;
+    cursor: pointer;
 
     &:hover{
         background-color: $color-text-hard;
