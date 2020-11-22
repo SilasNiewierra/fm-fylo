@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './Overview.scss';
 import logo from '../../assets/images/logo.svg';
-import ExitToAppIcon from '@material-ui/icons/ExitToApp';
-import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
-import CloudDoneIcon from '@material-ui/icons/CloudDone';
-import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
-import { IconButton } from '@material-ui/core';
+import FolderIcon from '@material-ui/icons/Folder';
+import CloudUploadIcon from '@material-ui/icons/CloudUpload';
+import InsertDriveFileIcon from '@material-ui/icons/InsertDriveFile';
 import ProgressBar from './../progressbar/ProgressBar';
+// import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+// import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
+// import CloudDoneIcon from '@material-ui/icons/CloudDone';
+// import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
+// import { IconButton } from '@material-ui/core';
 class Overview extends Component {
 
     constructor(props) {
@@ -30,19 +33,16 @@ class Overview extends Component {
                     <div className="overview-locations">
                         <div className="overview-locations-header">
                             <img src={logo} alt="logo" />
-                            <IconButton onClick={this.handleLogout}>
-                                <ExitToAppIcon style={{ color: "white" }} />
-                            </IconButton>
                         </div>
                         <div className="locations-container">
                             <div className="location-item">
-                                <CreateNewFolderIcon className="icon" />
+                                <InsertDriveFileIcon className="icon" />
                             </div>
                             <div className="location-item">
-                                <FormatListBulletedIcon className="icon" />
+                                <FolderIcon className="icon" />
                             </div>
                             <div className="location-item">
-                                <CloudDoneIcon className="icon" />
+                                <CloudUploadIcon className="icon" />
                             </div>
                         </div>
                     </div>
