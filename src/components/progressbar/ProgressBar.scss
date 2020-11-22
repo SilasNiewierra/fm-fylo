@@ -1,0 +1,42 @@
+@import "../../variables";
+
+.progressbar-container{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-background {
+    height: 10px;
+    width: 100%;
+    min-width: $dim-box-min-width;
+    background-color: $color-bg;
+    border-radius: $dim-border-radius-big;
+    margin-bottom: 10px;
+}
+
+  .container-progress {
+    height: 100%;
+    background: $color-gradient;
+    border-radius: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+.container-indicator {
+    background-color: $color-contrast;
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: inherit;
+}
+
+.container-labels{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+

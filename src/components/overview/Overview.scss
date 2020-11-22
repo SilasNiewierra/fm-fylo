@@ -3,8 +3,14 @@
 .overview-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+}
+
+.overview-align-container {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
     justify-content: center;
     gap: 20px;
 }
@@ -14,18 +20,18 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    background-color: $color-box;
-    border-radius: 10px 80px 10px 10px;
     padding: $dim-padding;
+    background-color: $color-box;
+    border-radius: $dim-border-radius 80px $dim-border-radius $dim-border-radius;
     min-width: $dim-box-min-width;
     min-height: 150px;
 }
 
 .overview-locations-header {
-    display:flex;
+    display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
@@ -41,18 +47,98 @@
 
 .location-item {
     background-color: $color-bg;
-    border-radius: 5px;
+    border-radius: $dim-border-radius-small;
     width: 40px;
     height: 40px;
     content: "";
 }
 
 .overview-space {
-    background-color: $color-box;
-    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
     min-width: $dim-box-min-width;
+    width: 500px;
+    height: 100%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.overview-space-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: $dim-padding-small;
+    background-color: white;
+    border-radius: $dim-border-radius;
+    margin-right: $dim-padding;
+    z-index: 1;
+}
+
+.desktop {
+    display: block;
+    margin-bottom: -20px;
+}
+
+.mobile {
+    display: none;
+}
+
+.overview-space-box-big-text {
+    color: $color-bg;
+    font-weight: $font-weight-bold;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.overview-space-box-text {
+    color: $color-text-smooth;
+    font-weight: $font-weight-bold;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.overview-main-box {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     padding: $dim-padding;
+    background-color: $color-box;
+    border-radius: $dim-border-radius;
+    min-width: $dim-box-min-width;
+    width: inherit;
+    height: 120px;
+}
+
+.overview-space-text {
+    letter-spacing: 0.1em;
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .overview-align-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .overview-space {
+        align-items: center;
+        width: $dim-box-min-width !important;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+
+    .overview-space-box {
+        margin-bottom: -10px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+        margin-top: -20px;
+    }
 }

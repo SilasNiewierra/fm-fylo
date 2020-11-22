@@ -13,7 +13,7 @@ class App extends Component {
 
   handleLogin(user) {
     this.setState({ user: user });
-    var spaceDummy = {total: 1000, used: 125};
+    var spaceDummy = {total: 1000, used: 420};
     this.setState({space: spaceDummy});
   }
 
