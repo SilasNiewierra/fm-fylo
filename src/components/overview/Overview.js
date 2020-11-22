@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import './Overview.scss';
 import logo from '../../assets/images/logo.svg';
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import CreateNewFolderIcon from '@material-ui/icons/CreateNewFolder';
+import CloudDoneIcon from '@material-ui/icons/CloudDone';
+import FormatListBulletedIcon from '@material-ui/icons/FormatListBulleted';
 import { IconButton } from '@material-ui/core';
 import ProgressBar from './../progressbar/ProgressBar';
 class Overview extends Component {
@@ -26,15 +29,21 @@ class Overview extends Component {
                 <div className="overview-align-container">
                     <div className="overview-locations">
                         <div className="overview-locations-header">
-                            <img src={logo} className="App-logo" alt="logo" />
+                            <img src={logo} alt="logo" />
                             <IconButton onClick={this.handleLogout}>
                                 <ExitToAppIcon style={{ color: "white" }} />
                             </IconButton>
                         </div>
                         <div className="locations-container">
-                            <div className="location-item"></div>
-                            <div className="location-item"></div>
-                            <div className="location-item"></div>
+                            <div className="location-item">
+                                <CreateNewFolderIcon className="icon" />
+                            </div>
+                            <div className="location-item">
+                                <FormatListBulletedIcon className="icon" />
+                            </div>
+                            <div className="location-item">
+                                <CloudDoneIcon className="icon" />
+                            </div>
                         </div>
                     </div>
                     <div className="overview-space">

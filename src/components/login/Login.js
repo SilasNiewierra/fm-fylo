@@ -1,4 +1,7 @@
-const { Component } = require("react");
+import React, { Component } from 'react';
+import './Login.scss';
+import logo from '../../assets/images/logo.svg';
+
 
 class Login extends Component {
 
@@ -14,9 +17,10 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
-                <h1>Login Now</h1>
-                <button onClick={this.handleLogin}>Login</button>
+            <div className="login-container">
+                <img src={logo} className="logo" alt="logo" />
+                {/* <h2>Get Started</h2> */}
+                <div className="button" onClick={this.handleLogin}>Login</div>
             </div>
         );
     }

@@ -1,0 +1,34 @@
+@import '../../variables';
+
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: $dim-padding;
+    background-color: $color-box;
+    border-radius: $dim-border-radius;
+}
+
+.logo {
+    margin-bottom: $dim-padding;
+}
+
+.button {
+    cursor: pointer;
+    background-color: $color-contrast;
+    border-radius: $dim-border-radius;
+    width: 200px;
+    height: 50px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: $color-bg;
+    font-weight: $font-weight-bold;
+
+    &:hover{
+        background-color: $color-text-hard;
+    }
+}

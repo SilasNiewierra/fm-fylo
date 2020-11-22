@@ -46,11 +46,23 @@
 }
 
 .location-item {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     background-color: $color-bg;
     border-radius: $dim-border-radius-small;
     width: 40px;
     height: 40px;
     content: "";
+
+    .icon {
+        color: $color-icon;
+        padding: 0;
+        margin: 0;
+        width: 30px;
+        height: 30px;
+    }
 }
 
 .overview-space {
