@@ -47,7 +47,7 @@
 
 .location-item {
     cursor: pointer;
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -58,10 +58,10 @@
     content: "";
     transition: background-color 0.5s;
 
-    &:hover{
+    &:hover {
         background-color: $color-icon;
 
-        .icon{
+        .icon {
             color: $color-box;
         }
     }
@@ -73,7 +73,6 @@
         margin: 0;
         color: $color-icon;
         transition: color 0.5s;
-
     }
 }
 
@@ -100,7 +99,20 @@
     border-radius: $dim-border-radius;
     background-color: white;
     z-index: 1;
+    position: relative;
+
+    &:before {
+        content: "";
+        background-color: white;
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        bottom: -35px;
+        right: 0;
+        clip-path: polygon(40% 0, 100% 0, 100% 55%);
+    }
 }
+
 
 .desktop {
     display: block;
@@ -156,6 +168,10 @@
 
     .overview-space-box {
         margin-bottom: -10px;
+
+        &::before{
+            display: none;
+        }
     }
 
     .desktop {
@@ -164,7 +180,7 @@
 
     .mobile {
         display: block;
-        margin-top: calc(-1*((#{$dim-padding}/2) + 25px));
+        margin-top: calc(-1 * ((#{$dim-padding}/ 2) + 25px));
     }
 
     .overview-space-text {
