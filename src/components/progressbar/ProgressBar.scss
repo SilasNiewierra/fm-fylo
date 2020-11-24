@@ -7,7 +7,7 @@
 }
 
 .container-background {
-    height: 10px;
+    height: 13px;
     width: 100%;
     min-width: $dim-box-min-width;
     background-color: $color-bg;
@@ -28,8 +28,8 @@
 .container-indicator {
     background-color: $color-contrast;
     content: "";
-    width: 9px;
-    height: 9px;
+    width: 11px;
+    height: 11px;
     border-radius: inherit;
 }
 

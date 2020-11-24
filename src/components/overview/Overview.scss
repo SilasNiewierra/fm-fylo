@@ -46,6 +46,7 @@
 }
 
 .location-item {
+    cursor: pointer;
     display:flex;
     flex-direction: row;
     align-items: center;
@@ -55,6 +56,15 @@
     border-radius: $dim-border-radius-small;
     background-color: $color-bg;
     content: "";
+    transition: background-color 0.5s;
+
+    &:hover{
+        background-color: $color-icon;
+
+        .icon{
+            color: $color-box;
+        }
+    }
 
     .icon {
         width: 30px;
@@ -62,6 +72,8 @@
         padding: 0;
         margin: 0;
         color: $color-icon;
+        transition: color 0.5s;
+
     }
 }
 
